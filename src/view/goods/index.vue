@@ -4,7 +4,7 @@
                :autoplay="3000">
       <van-swipe-item v-for="thumb in goods.thumb"
                       :key="thumb">
-        <img :src="thumb">
+        <!-- <img :src="thumb"> -->
       </van-swipe-item>
     </van-swipe>
 

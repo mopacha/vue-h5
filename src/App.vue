@@ -4,10 +4,8 @@
   </div>
 </template>
 
-<style>
-body {
-  font-size: 16px;
-  background-color: #f8f8f8;
-  -webkit-font-smoothing: antialiased;
-}
+
+<style lang="less">
+@import "./view/style/app.less";
 </style>
+

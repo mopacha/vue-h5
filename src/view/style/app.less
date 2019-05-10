@@ -1,0 +1,22 @@
+@max-font-size: 2.5rem;
+@min-font-size: 2rem;
+@max-screen: 414px;
+@min-screen: 320px;
+@media (min-width: @max-screen) {
+	html {
+		font-size: @max-font-size !important;
+	}
+}
+@media (max-width: @min-screen) {
+	html {
+		font-size: @min-font-size !important;
+	}
+}
+html {
+	min-width: 640px;
+}
+
+body {
+	background-color: #f8f8f8;
+	-webkit-font-smoothing: antialiased;
+}
