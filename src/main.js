@@ -1,4 +1,4 @@
-import 'amfe-flexible'
+import '@/utils/rem-adapt'
 import Vue from 'vue'
 import App from './App'
 import { router } from './router'

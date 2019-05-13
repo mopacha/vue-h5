@@ -6,6 +6,6 @@
 
 
 <style lang="less">
-@import "./view/style/app.less";
+@import "./view/styles/app.less";
 </style>
 

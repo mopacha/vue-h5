@@ -15,8 +15,8 @@ module.exports = {
 					}),
 					pxtorem({
 						rootValue: 37.5,
-						propList: ['*'],
-						selectorBlackList: ['van-circle__layer']	// 仅在使用 Circle 组件时需要,参见 https://github.com/youzan/vant/issues/1948
+						propList: ['*', '!font-size'],
+						selectorBlackList: ['van-circle__layer', 'ignore']	// 仅在使用 Circle 组件时需要,参见 https://github.com/youzan/vant/issues/1948
 					})
 				]
 			}
