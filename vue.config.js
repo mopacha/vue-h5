@@ -1,11 +1,25 @@
 const autoprefixer = require('autoprefixer')
 const pxtorem = require('postcss-pxtorem')
 
+
 module.exports = {
 	lintOnSave: false,
 	outputDir: 'docs',
 	publicPath: process.env.NODE_ENV === 'production' ? '/vue-h5/' : '/',
 	productionSourceMap: false,
+	devServer: {
+		port: '3006',
+		open: false,
+		proxy: {
+			'api/': {
+				target: 'http://10.12.6.13',
+				changeOrigin: true,
+				pathRewrite: {
+				  '^/api':''
+				}
+			}
+		}
+	},
 	css: {
 		loaderOptions: {
 			postcss: {

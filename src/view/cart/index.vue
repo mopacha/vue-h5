@@ -77,6 +77,10 @@ export default {
 
     onSubmit() {
       Toast('点击结算');
+      this.$router.push({
+        path: 'my',
+        query: this.$route.query
+      })
     }
   }
 };

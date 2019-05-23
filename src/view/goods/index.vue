@@ -4,7 +4,7 @@
                :autoplay="3000">
       <van-swipe-item v-for="thumb in goods.thumb"
                       :key="thumb">
-        <!-- <img  :src="thumb"> -->
+        <img  :src="thumb">
       </van-swipe-item>
     </van-swipe>
 
@@ -113,10 +113,13 @@ export default {
 
     onClickCart() {
       this.$router.push('cart');
-    },
-
-    sorry() {
-      Toast('暂无后续逻辑~');
+		},
+		
+		sorry() {
+      this.$router.push({
+        path: 'cart',
+        query: this.$route.query
+      })
     }
   }
 };
