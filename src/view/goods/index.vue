@@ -25,7 +25,7 @@
                 is-link
                 @click="sorry">
         <template slot="title">
-          <span class="van-cell-text">有赞的店</span>
+          <span class="van-cell-text">coofy的店</span>
           <van-tag class="goods-tag"
                    type="danger">官方</van-tag>
         </template>
