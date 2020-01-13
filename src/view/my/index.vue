@@ -1,7 +1,6 @@
 <template>
   <div>
-    <img class="user-poster"
-         src="./img/user.png">
+    <img class="user-poster" src="./img/user.png" />
     <van-row class="user-links">
       <van-col span="6">
         <van-icon name="pending-payment" />
@@ -22,27 +21,19 @@
     </van-row>
 
     <van-cell-group class="user-group">
-      <van-cell icon="records"
-                title="全部订单"
-                is-link />
+      <van-cell icon="records" title="全部订单" is-link />
     </van-cell-group>
 
     <van-cell-group>
-      <van-cell icon="points"
-                title="我的积分"
-                is-link />
-      <van-cell icon="gold-coin-o"
-                title="我的优惠券"
-                is-link />
-      <van-cell icon="gift-o"
-                title="我收到的礼物"
-                is-link />
+      <van-cell icon="points" title="我的积分" is-link />
+      <van-cell icon="gold-coin-o" title="我的优惠券" is-link />
+      <van-cell icon="gift-o" title="我收到的礼物" is-link />
     </van-cell-group>
   </div>
 </template>
 
 <script>
-import { Row, Col, Icon, Cell, CellGroup } from 'vant';
+import { Row, Col, Icon, Cell, CellGroup } from "vant";
 
 export default {
   components: {

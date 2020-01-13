@@ -4,5 +4,6 @@
 .idea
 .vscode
 node_modules
+package-lock.json
 docs
 yarn.lock

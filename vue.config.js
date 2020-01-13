@@ -8,7 +8,7 @@ module.exports = {
 	publicPath: process.env.NODE_ENV === 'production' ? '/vue-h5/' : '/',
 	productionSourceMap: false,
 	devServer: {
-		port: '3006',
+		port: '3000',
 		open: false,
 		proxy: {
 			'api/': {
